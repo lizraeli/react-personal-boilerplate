@@ -5,7 +5,7 @@ import {
   Miss,
   Route
 } from 'react-router-dom'
-
+import {Container} from 'rebass'
 import NavBar from './NavBar'
 import Footer from './Footer'
 import Home from './Home'
@@ -34,7 +34,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this)
     return (
       <Router>
         <div>
@@ -44,12 +43,16 @@ class App extends React.Component {
             selected = {this.state.theme}
           />
           <NavBar />
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/pets" component={Pets} />
+          <Container>    
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/pets" component={Pets} />
+          </Container>
           <Footer />
+        
         </div>
       </Router>
+
     )
   }
 }

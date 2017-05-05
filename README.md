@@ -9,8 +9,13 @@ Technologies:
 - [`Webpack 2`](https://webpack.js.org/configuration/)
 - [`Babel`](https://babeljs.io/)
 
-###Getting Started ###
+### Getting Started
 `git clone https://github.com/lizraeli/react-personal-boilerplate.git`
 
-- run locally: `npm start`
-- build for production: `npm run build` then test with `node server`
+- run locally:
+- - `npm install` 
+- - `npm start`
+- build for production: 
+- - `npm run build` 
+- - test with `node server`
+

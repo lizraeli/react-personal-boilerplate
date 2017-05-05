@@ -7,9 +7,14 @@
     "start": "webpack-dev-server",
     "build": "webpack --env=prod --progress --profile --colors"
   },
+
   "keywords": [
     "react"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lizraeli/react-personal-boilerplate.git"
+  },
   "author": "Lev Izraelit",
   "license": "MIT",
   "dependencies": {

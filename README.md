@@ -1,4 +1,4 @@
-## A boilerplate for a personal wesbite with React. 
+## A Boilerplate for a Personal Wesbite with React
 Demo: [http://react-personal.netlify.com/](http://react-personal.netlify.com/)
 
 Technologies:
@@ -23,7 +23,7 @@ Technologies:
   - `npm run build` 
   - test with `node server`
 
-### Choosing A theme and Removing the Theme Selector
+### Choosing a Theme and Removing the Theme Selector
 The themes and fonts used in this project are identical to those used in the [rebass demo](http://jxnblk.com/rebass/demo/) (see also their [github repo](https://github.com/jxnblk/rebass/tree/master/demo))
 
 The style of rebass components can be configured globally by providing a theme object (containing CSS written in JSX) to [getChildContext](https://facebook.github.io/react/docs/context.html) of a root component and specifying `child context type`. In this project, this is done in the `App` component:
@@ -58,7 +58,7 @@ To remove the theme selector erase `ThemeProvider` component from the render fun
 ```
 
 ### Font Family and Other Global Styling
-The base font some other global styles are specified in `build/index.html` (used both for development and production):
+The base font and some other global styles are specified in `build/index.html` (used both for development and production):
 ```html
 <style>
   ...

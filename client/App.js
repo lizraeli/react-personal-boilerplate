@@ -17,6 +17,7 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
+      // replace 'basic' with any of the theme names
       theme: this.props.themes['basic']
     }
     this.changeTheme = this.changeTheme.bind(this)
@@ -28,15 +29,20 @@ class App extends React.Component {
     }
   }
   
+  // changeTheme is invoked when a style is selected through <ThemeProvider ... />
   changeTheme(e){
     const theme = e.target.value
     this.setState({theme: this.props.themes[theme]})
   }
 
   render() {
+    console.log(this.props)
     return (
       <Router>
         <div>
+          { 
+            // Erase <ThemeProvider .../> to remove the theme selector
+          }
           <ThemeProvider 
             themes = {this.props.themes}
             onChange= {this.changeTheme}

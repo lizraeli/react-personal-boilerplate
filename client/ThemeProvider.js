@@ -5,7 +5,7 @@ import App from './App'
 const ThemeProvider = (props) => {
     const { themes, selected } = props
 
-    const themeTitles = Object.keys(themes).map((key, index) => (
+    const themeTitles = Object.keys(themes).map((key) => (
       {
         children: key,
         value: key
@@ -16,7 +16,7 @@ const ThemeProvider = (props) => {
       <div>
         <Select
           label="theme"
-          name=""
+          name="theme"
           options={themeTitles}
           onChange={props.onChange}
         />

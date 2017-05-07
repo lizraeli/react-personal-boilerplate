@@ -17,7 +17,7 @@ const themes = {
   hello,
   pink,
   bold,
-  err,
+  err
 }
 
 export default themes

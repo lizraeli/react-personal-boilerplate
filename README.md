@@ -58,7 +58,7 @@ To remove the theme selector erase `ThemeProvider` component from the render fun
 ```
 
 ### Font Family and Other Global Styling
-The base font some other global styles are specified in `index.html`:
+The base font some other global styles are specified in `build/index.html` (used both for development and production):
 ```html
 <style>
   ...

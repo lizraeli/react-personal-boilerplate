@@ -5,7 +5,7 @@ import {
   Miss,
   Route
 } from 'react-router-dom'
-import {Container} from 'rebass'
+import { Container } from 'rebass'
 import NavBar from './NavBar'
 import Footer from './Footer'
 import Home from './Home'
@@ -14,7 +14,7 @@ import About from './About'
 import ThemeProvider from './ThemeProvider'
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
       // replace 'basic' with any of the theme names
@@ -28,11 +28,11 @@ class App extends React.Component {
       rebass: this.state.theme
     }
   }
-  
+
   // changeTheme is invoked when a style is selected through <ThemeProvider ... />
-  changeTheme(e){
+  changeTheme(e) {
     const theme = e.target.value
-    this.setState({theme: this.props.themes[theme]})
+    this.setState({ theme: this.props.themes[theme] })
   }
 
   render() {
@@ -40,22 +40,22 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          { 
+ 
+          <NavBar />
+          <Container>
+                   {
             // Erase <ThemeProvider .../> to remove the theme selector
           }
-          <ThemeProvider 
-            themes = {this.props.themes}
-            onChange= {this.changeTheme}
-            selected = {this.state.theme}
+          <ThemeProvider
+            themes={this.props.themes}
+            onChange={this.changeTheme}
+            selected={this.state.theme}
           />
-          <NavBar />
-          <Container>    
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/pets" component={Pets} />
+            <Footer />
           </Container>
-          <Footer />
-        
         </div>
       </Router>
 

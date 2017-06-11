@@ -7,7 +7,6 @@
     "start": "webpack-dev-server",
     "build": "webpack --env=prod --progress --profile --colors"
   },
-
   "keywords": [
     "react"
   ],

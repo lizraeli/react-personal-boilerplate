@@ -3,7 +3,7 @@ import {Footer} from 'rebass'
 
 const FooterUI = () => (
   <Footer>
-    lizraeli ©2017
+    Lev Izraelit ©2017
   </Footer>
 )
 

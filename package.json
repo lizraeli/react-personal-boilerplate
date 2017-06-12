@@ -28,7 +28,15 @@
     "react-tap-event-plugin": "^2.0.1",
     "rebass": "^0.3.4",
     "webpack": "~2.4.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^2.4.5",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "file-loader": "^0.11.1",
+    "style-loader": "^0.17.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",

@@ -56,6 +56,7 @@ class App extends React.Component {
             <Route path="/pets" component={Pets} />
             <Footer />
           </Container>
+          
         </div>
       </Router>
 
